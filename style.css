@@ -1,0 +1,154 @@
+:root {
+   --color-1:#1467AF;
+   --color-2:#0F4C81;
+   --font-family:"Nanum Gothic", sans-serif;
+}
+*{
+   margin:0;
+   padding:0;
+}
+body{
+  background-color:var(--color-1);
+   color:white;
+}
+.navbar{
+   background-color:var(--color-2);
+}
+.offcanvas{
+   background-color:var(--color-2);
+}
+body{
+   font-family: var(--font-family);
+}
+.navbar-brand{
+   font-size:35px;
+}
+.offcanvas-body a{
+  
+  text-decoration: none;
+  padding:20px 10px;
+}
+.offcanvas-body li{
+   list-style: none;
+   padding:10px 0px;
+}
+/* Responsive Background Image for Div */
+.responsive-bg-div {
+   background-image: url('img-1.webp'); /* Add the path to your image */
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   width: 100%; /* Full width */
+   height: 100vh; /* 60% of the viewport height */
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top:0px;
+ }
+ 
+
+ 
+ .responsive-bg-div::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(7, 71, 131, 0.5);
+   z-index: 0;
+ }
+ .title-heading{
+   font-size: 100px;
+   color:rgba(12, 119, 233, 0.974);
+ }
+ .product-container{
+   
+   display:flex;
+   flex-wrap:wrap;
+   align-items:center;
+   gap:40px;
+   justify-content: center;
+   margin:20px 0px;
+ }
+.card{
+   height:500px;
+   width:400px;
+}
+#side-heading{
+   font-size:50px;
+   text-align:center;
+   margin:100px 0px;
+}
+.card-body button{
+   margin-top:20px;
+}
+.card {
+   transition: 0.5s ;
+}
+
+.card:hover{
+   transform:scale(1.1);
+}
+.card{
+   border-radius:5px;
+}
+.carousel-item{
+  
+  height:80vh;
+  width:100%;
+  position:relative;
+}
+.carousel-item img{
+  height:800px;
+  width:100%;
+  opacity:0.7;
+}
+.carousel-heading{
+   font-size:50px;
+   
+   text-transform: uppercase;
+}
+.carousel-caption{
+   position: absolute;
+   top:250px;
+   
+}
+.review{
+   height:400px;
+   width:300px;
+}
+.review img{
+  margin:0px auto;
+  padding-top:5px;
+  border-radius:50%
+
+}
+.star-div{
+   padding-top:1px;
+   
+}
+.star-div span{
+   font-size:30px;
+   color:yellow
+}
+.review:hover{
+   cursor: pointer;
+  
+}
+.faq-box{
+   width:70%;
+   padding:20px;
+  
+}
+.accordion-item{
+   background-color:#1467AF;
+   color:white;
+  
+}
+.accordion-body li{
+   list-style:disc;
+   padding-left:20px;
+
+}
