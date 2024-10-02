@@ -1,7 +1,7 @@
 :root {
    --color-1:#1467AF;
    --color-2:#0F4C81;
-   --font-family:"Nanum Gothic", sans-serif;
+   --font-family:"Roboto", sans-serif;
 }
 *{
    margin:0;
@@ -17,8 +17,18 @@ body{
 .offcanvas{
    background-color:var(--color-2);
 }
+.navlink{
+   transition:1s;
+}
+
+.nav-link:hover{
+background-color:black;
+
+
+}
 body{
    font-family: var(--font-family);
+   font-weight: 400;
 }
 .navbar-brand{
    font-size:35px;
@@ -142,13 +152,34 @@ body{
    padding:20px;
   
 }
+.accordion-button{
+   font-size:25px;
+}
 .accordion-item{
-   background-color:#1467AF;
-   color:white;
-  
+   padding:15px
 }
 .accordion-body li{
    list-style:disc;
    padding-left:20px;
+   font-size:22px;
 
+}
+input[type]{
+   width:50%;
+   margin:0px auto;
+   padding:10px 0px;
+}
+textarea{
+   width:50%;
+
+}
+.feed-form{
+   margin-top:200px;
+   border:20px solid white;
+
+}
+footer .container-fluid{
+   margin-top:100px;
+   padding:20px;
+   background-color:#0F4C81;
 }
